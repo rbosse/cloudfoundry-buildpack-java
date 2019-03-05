@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-echo "compile start"
+puts "compile start"
 
 # sync output
 $stdout.sync = true
@@ -8,10 +8,10 @@ $stdout.sync = true
 $:.unshift File.expand_path("../../lib", __FILE__)
 require "language_pack"
 
-echo "before detect"
+puts "before detect"
 
 if pack = LanguagePack.detect(ARGV[0], ARGV[1])
-  echo "inside if"
+  puts "inside if"
   #TODO re-enable?
   #pack.log("compile") do
     pack.compile
