@@ -60,4 +60,4 @@ fi
 
 
 echo "no"
-exit 0
+exit 1
